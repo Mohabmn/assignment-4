@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="loginform container w-75 my-5 d-flex justify-content-center ">
+        <div class="login-form d-flex justify-content-center align-items-center flex-column w-75 pb-5">
+            <h1 class="pt-5 pb-2">Smart Login System</h1>
+            <input class="p-2 m-3 lead fs-6" type="email" id="email" name="email" placeholder="Enter your email">
+            <input class="p-2 m-1 lead fs-6 " type="password" id="password" name="password"
+                placeholder="Enter your password">
+            <div class="success-login mt-3 d-none">
+                <p class="success-text-login p-2  mb-0 fw-bolder fs-4">SUCCESS</p>
+            </div>
+            <div class="FAILD-login mt-3 d-none">
+                <p class="FAILD-text-login p-2  mb-0 fw-bolder fs-4">INVALID USER</p>
+            </div>
+            <button class="p-2 mt-4 mb-3" id="loginBTN">Login</button>
+            <span class="text-white">Don't have an account ? <span id="SignUp" class="a">Sign Up</span></span>
+        </div>
+    </div>
+
+
+
+
+    <div class="signform container w-75 my-5 d-flex justify-content-center d-none">
+        <div class="sign-form d-flex justify-content-center align-items-center flex-column w-75 pb-5">
+            <h1 class="pt-5 pb-2">Smart Login System</h1>
+            <input class="p-2 m-1 lead fs-6 " type="text" id="nameSignup" name="name" placeholder="Enter your name">
+            <input class="p-2 m-3 lead fs-6" type="email" id="emailSignup" name="email" placeholder="Enter your email">
+            <input class="p-2 m-1 lead fs-6 " type="password" id="passwordSignup" name="password"
+                placeholder="Enter your password">
+            <div class="success mt-3 d-none">
+                <p class="success-text p-2  mb-0 fw-bolder fs-4">SUCCESS</p>
+            </div>
+            <div class="FAILD mt-3 d-none">
+                <p class="FAILD-text p-2  mb-0 fw-bolder fs-4"></p>
+            </div>
+            <button class="p-2 mt-4 mb-3" id="signupBTN">Sign Up</button>
+            <span class="text-white">You have an account ? <span id="Signin" class="a">Signin</span>
+        </div>
+    </div>
+
+
+
+    <div class="container w-75 d-flex justify-content-center align-items-center">
+        <div class="welcomeDiv d-flex justify-content-center align-items-center w-75 p-5 d-none text-center my-5 flex-column">
+
+            <h1 class="welcome"></h1>
+            <button class="mt-5" id="logout">Logout</button>
+        </div>
+    </div>
+
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

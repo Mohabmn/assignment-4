@@ -1,0 +1,162 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+:root{
+    --background-color : #24353F;
+    --font-color : #17A2B8;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+}
+h1{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    color: var(--font-color);
+}
+.login-form,.sign-form{
+    background-color: var(--background-color);
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.a{
+    color: white;
+    text-decoration: none;
+}
+.a:hover{
+    text-decoration: underline;
+    color :white;
+    cursor: pointer;
+}
+input{
+    width: 90% ;
+    background-color: var(--background-color) ;
+    border:1px solid white ;
+    border-radius: 5px  ;
+    color: white ;
+    transition: all 0.3s ease-in-out;
+}
+input::placeholder{
+    color: white ;
+}
+input:focus-visible {
+    border: none;
+    outline: 1px solid #80BDFF;
+   
+  }
+button{
+    width: 90%;
+    background-color: var(--background-color);
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out; 
+}
+button:hover{
+    background-color: var(--font-color);
+    color: white;
+}
+.success-text{
+    color: rgb(31, 198, 31);
+    margin: 0;
+    padding: 0;
+}
+.success{
+    box-shadow: #17A2B8;
+    background-color: transparent;
+    border: 1px solid var(--font-color);
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: 0;
+    padding: 0;
+    border-radius: 30%;
+    box-shadow:-1px 1px 15px 1px rgb(31, 198, 31); 
+}
+.success-login{
+    box-shadow: #17A2B8;
+    background-color: transparent;
+    border: 1px solid var(--font-color);
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: 0;
+    padding: 0;
+    border-radius: 30%;
+    box-shadow:-1px 1px 15px 1px rgb(31, 198, 31); 
+}
+.success-text-login{
+    color: rgb(31, 198, 31);
+    margin: 0;
+    padding: 0;
+
+}
+.FAILD-text{
+    color: rgb(198, 31, 31);
+    margin: 0;
+    padding: 0;
+}
+.FAILD{
+    box-shadow: #17A2B8;
+    background-color: transparent;
+    border: 1px solid var(--font-color);
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: 0;
+    padding: 0;
+    border-radius: 30%;
+    box-shadow:-1px 1px 15px 1px rgb(198, 31, 31); ;
+}
+.FAILD-login{
+    box-shadow: #17A2B8;
+    background-color: transparent;
+    border: 1px solid var(--font-color);
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: 0;
+    padding: 0;
+    border-radius: 30%;
+    box-shadow:-1px 1px 15px 1px rgb(198, 31, 31); ;
+}
+.FAILD-text-login{
+    color: rgb(198, 31, 31);
+    margin: 0;
+    padding: 0;
+}
+.welcomeDiv{
+    height: 500px;
+    animation: colors;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+    box-shadow: -5px 2px 54px -9px rgb(255, 255, 255);
+}
+.welcomeDiv h1{
+    font-family: "Bungee", sans-serif;
+  font-weight: 400;
+    color: black;
+    animation: fontcolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
+}
+@keyframes colors{
+    0%{
+        background-color: #81BFDA;
+    }
+    50%{
+        background-color: #B1F0F7;
+    }
+    100%, 0%{
+        background-color: #FADA7A;
+    }
+}
+@keyframes fontcolor{
+    0%{
+        color: #B1F0F7;
+    }
+    50%{
+        color: #FADA7A;
+    }
+    100% , 0%{
+        color: #81BFDA;
+    }
+}
